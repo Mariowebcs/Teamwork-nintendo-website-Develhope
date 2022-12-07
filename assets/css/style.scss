@@ -1,7 +1,5 @@
-:root {
-    --primary-color: #E60012;
-    --accent-color: #AC000D;
-}
+$primary-color: #E60012;
+$accent-color: #AC000D;
 
 
 /*TYPOGRAPHY*/
@@ -13,28 +11,17 @@ body {
     font-family: 'Museo Sans Rounded', sans-serif;
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
 strong,
 h1,
 h2 {
     font-weight: 600;
 }
 
-hr {
-    color: #d6d6d6;
-    height: 0px;
-    border-style: solid none none;
-}
+// hr {
+//     color: #d6d6d6;
+//     height: 0px;
+//     border-style: solid none none;
+// }
 
 img {
     max-width: 100%;
@@ -43,14 +30,16 @@ img {
 
 a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: $primary-color;
     font-size: 1rem;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
 }
 
-a:hover,
-a:focus {
-    color: var(--accent-color);
-}
+
 
 /* hr{
     margin: 2em 0;
@@ -79,33 +68,37 @@ a:focus {
 
 .btn {
     color: #fff;
-    background: var(--primary-color);
-    padding: .6em 1.3em;
+    background: $primary-color;
+    padding: .8em 2em;
     border-radius: .3rem;
     transition: .2s;
-    font-size: 1.3rem;
-}
+    font-size: 1rem;
+    transition: .3s;
+    
 
-.btn:hover,
-.btn:focus {
-    background: var(--accent-color);
-    padding: 1em 1.35em;
-    color: #fff;
-}
+    &:hover,
+    &:focus {
+        background: $accent-color;
+        padding: 1.2em 2.8em;
+        color: #fff;
+       
+    }
 
-.btn-main {
-    margin: 1.8em auto;
-    display: block;
-    text-align: center;
-}
+    &-main {
+        margin: 1.8em auto;
+        display: block;
+        text-align: center;
+    }
 
+   
+}
 
 .card-hover {
     color: rgb(72, 72, 72);
-}
 
-.card-hover:hover {
-    color: var(--primary-color);
+    &:hover {
+        color: $primary-color;
+    }
 }
 
 /* CARD */
@@ -119,7 +112,7 @@ a:focus {
 }
 
 .read-more {
-    border-bottom: 1px solid var(--accent-color);
+    border-bottom: 1px solid $accent-color;
     font-size: 1rem;
     display: inline-block;
     margin: 1.5em 0 0 0;
@@ -154,7 +147,6 @@ a:focus {
 
 .container {
     width: 95%;
-    /* max-width: 35.3125rem; */
     margin: 1em auto;
 }
 
@@ -172,8 +164,8 @@ a:focus {
 }
 
 
-@media(min-width:768px){
-    .section-text-main{
+@media(min-width:768px) {
+    .section-text-main {
         font-size: 1.3rem;
     }
 
@@ -181,7 +173,7 @@ a:focus {
         max-width: 48%;
     }
 
-    .flex{
+    .flex {
         flex-direction: row;
     }
 
