@@ -37,8 +37,8 @@ a:hover, a:focus {
 }
 
 .section-title {
-  margin: 0.7em 0 0.7em 0;
-  font-size: 2rem;
+  margin: 0.7em 0 1em 0;
+  font-size: 1.7rem;
 }
 
 .section-img-main {
@@ -49,25 +49,35 @@ a:hover, a:focus {
   margin: 2em 0;
 }
 
+.news {
+  margin-bottom: 2em;
+}
+
 /* BUTTONS */
-.btn {
+.btn, .btn-see-all {
   color: #fff;
   background: #E60012;
-  padding: 0.8em 2em;
   border-radius: 0.3rem;
   transition: 0.2s;
-  font-size: 1rem;
+  font-size: 1.2rem;
   transition: 0.3s;
 }
-.btn:hover, .btn:focus {
+.btn:hover, .btn-see-all:hover, .btn:focus, .btn-see-all:focus {
   background: #AC000D;
-  padding: 1.2em 2.8em;
+  padding: 1em 1.5em;
   color: #fff;
 }
 .btn-main {
   margin: 1.8em auto;
   display: block;
   text-align: center;
+  padding: 0.6em 1.2em;
+}
+.btn-see-all {
+  padding: 0.7em 1.5em;
+}
+.btn-see-all:hover {
+  padding: 0.8em 1.8em;
 }
 
 .card-hover {

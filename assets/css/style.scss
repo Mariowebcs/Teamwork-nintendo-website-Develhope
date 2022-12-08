@@ -52,8 +52,8 @@ a {
 }
 
 .section-title {
-    margin: .7em 0 .7em 0;
-    font-size: 2rem;
+    margin: .7em 0 1em 0;
+    font-size: 1.7rem;
 }
 
 .section-img-main {
@@ -64,22 +64,25 @@ a {
     margin: 2em 0;
 }
 
+.news{
+    margin-bottom: 2em;
+}
+
 /* BUTTONS */
 
 .btn {
     color: #fff;
     background: $primary-color;
-    padding: .8em 2em;
     border-radius: .3rem;
     transition: .2s;
-    font-size: 1rem;
+    font-size: 1.2rem;
     transition: .3s;
     
 
     &:hover,
     &:focus {
         background: $accent-color;
-        padding: 1.2em 2.8em;
+        padding: 1em 1.5em;
         color: #fff;
        
     }
@@ -88,6 +91,16 @@ a {
         margin: 1.8em auto;
         display: block;
         text-align: center;
+        padding: .6em 1.2em;
+    }
+
+    &-see-all{
+        @extend .btn;
+        padding: .7em 1.5em;  
+        
+        &:hover{
+            padding: .8em 1.8em;
+        }
     }
 
    
