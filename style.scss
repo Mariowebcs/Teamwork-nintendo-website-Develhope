@@ -1,7 +1,11 @@
+
+// USE A SCSS MODULE WITH VARIABLES VALID FOR ALL
 $text_color: rgb(72, 72, 72);
-$basis_red: #E60012;
+$basis_red: #E60012; 
 $effect_red: #AC000D;
 
+
+// INSERT IN A CSS RESET FILE VALID FOR ALL
 * {
     box-sizing: border-box;
     margin: 0;
