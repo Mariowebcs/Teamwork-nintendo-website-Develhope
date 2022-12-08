@@ -54,30 +54,39 @@ a:hover, a:focus {
 }
 
 /* BUTTONS */
-.btn, .btn-see-all {
+.btn-sec, .btn-sec-see-all {
   color: #fff;
   background: #E60012;
   border-radius: 0.3rem;
   transition: 0.2s;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   transition: 0.3s;
 }
-.btn:hover, .btn-see-all:hover, .btn:focus, .btn-see-all:focus {
-  background: #AC000D;
-  padding: 1em 1.5em;
-  color: #fff;
-}
-.btn-main {
+.btn-sec-main {
   margin: 1.8em auto;
   display: block;
   text-align: center;
-  padding: 0.6em 1.2em;
+  padding: 0.8em 1.5em;
 }
-.btn-see-all {
-  padding: 0.7em 1.5em;
+.btn-sec-main:hover, .btn-sec-main:focus {
+  background: #AC000D;
+  padding: 1.1em 1.8em;
+  color: #fff;
 }
-.btn-see-all:hover {
-  padding: 0.8em 1.8em;
+.btn-sec-see-all {
+  padding: 0.8em 1em;
+  width: 100%;
+  display: block;
+  text-align: center;
+  transition: 0.3s;
+}
+.btn-sec-see-all:hover {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  color: #fff;
+  background: #AC000D;
 }
 
 .card-hover {
@@ -169,11 +178,11 @@ a:hover, a:focus {
   .section-text-main {
     font-size: 1.3rem;
   }
-  .btn-main {
+  .btn-sec-main {
     display: inline-block;
   }
-  .see-all {
-    width: 30%;
+  .btn-sec-see-all {
+    width: 25%;
   }
   .flex {
     flex-direction: row;

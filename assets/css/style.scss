@@ -70,36 +70,46 @@ a {
 
 /* BUTTONS */
 
-.btn {
+.btn-sec {
     color: #fff;
     background: $primary-color;
     border-radius: .3rem;
     transition: .2s;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     transition: .3s;
     
 
-    &:hover,
-    &:focus {
-        background: $accent-color;
-        padding: 1em 1.5em;
-        color: #fff;
-       
-    }
+   
 
     &-main {
         margin: 1.8em auto;
         display: block;
         text-align: center;
-        padding: .6em 1.2em;
+        padding: .8em 1.5em;
+
+        &:hover,
+        &:focus {
+            background: $accent-color;
+            padding: 1.1em 1.8em;
+            color: #fff;
+           
+        }
     }
 
     &-see-all{
-        @extend .btn;
-        padding: .7em 1.5em;  
-        
-        &:hover{
-            padding: .8em 1.8em;
+        @extend .btn-sec;
+        padding: .8em 1em;  
+        width : 100%;
+        display: block;
+        text-align: center;
+        transition: .3s;
+         &:hover{
+            padding-top: 1em;
+            padding-bottom: 1em;
+            padding-right: 1.5em;
+            padding-left: 1.5em;
+            color: #fff;
+            background: $accent-color;
         }
     }
 
@@ -205,12 +215,12 @@ a {
         font-size: 1.3rem;
     }
 
-    .btn-main {
+    .btn-sec-main {
         display: inline-block;
     }
 
-    .see-all {
-        width: 30%;
+    .btn-sec-see-all {
+        width: 25%;
     }
 
     .flex {
