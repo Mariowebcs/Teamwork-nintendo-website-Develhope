@@ -46,6 +46,7 @@ a {
     width: 100%;
 } */
 
+
 .section-text-main {
     font-size: 1.2rem;
     padding: 0 1em 0 0;
@@ -128,17 +129,19 @@ a {
 
 .info {
     margin: .8em 0;
+    font-weight: 300;
 }
 
 .header-text {
-    height: 3rem;
+    height: 3.3rem;
 }
 
 .read-more {
-    border-bottom: 1px solid $accent-color;
+    border-bottom: 2px solid $primary-color;
     font-size: 1rem;
     display: inline-block;
     margin: 1.5em 0 0 0;
+    font-weight: 600;
 }
 
 .big {
@@ -152,7 +155,7 @@ a {
 }
 
 .card-image {
-    border-radius: .5em;
+    border-radius: .3em;
     width: 100%;
 }
 
@@ -201,7 +204,11 @@ a {
     }
 
     .card-small {
-        width: 23%;
+        width: 22%;
+    }
+
+    .promotional-subtitle{
+        line-height: 1.4;
     }
 }
 
