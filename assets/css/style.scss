@@ -10,7 +10,7 @@ $effect_red: #AC000D;
 /*TYPOGRAPHY*/
 html,
 body {
-    width: 100%;
+    // width: 100%;
     font-size: 16px;
     color: rgb(72, 72, 72);
     font-family: 'Museo Sans Rounded', sans-serif;
@@ -40,6 +40,11 @@ a {
 
 header{
     margin-bottom: 5em;
+}
+
+.section-gaming-news{
+    position: relative;
+    top: 5em;
 }
 
 a, 
@@ -166,7 +171,7 @@ nav {
     z-index: 2;
     img {
         display: block;
-        // width: 95vw;
+        width: 95vw;
         height: auto;
         margin: auto;
         border-radius: 5px;
@@ -178,10 +183,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding-top: 2em;
-    width: 95vw;
+    width: 95%;
     max-width: 1440px;
     z-index: 2;
-    margin-bottom: 10em ;
     div:first-child {
         display: flex;
         align-items: center;
@@ -226,6 +230,7 @@ nav {
 }
 
 //navbar sotto
+
 .nav_mobile {
     position: fixed;
     bottom: 0px;
@@ -279,7 +284,7 @@ nav {
     width: 95vw;
     margin: auto;
     position: relative;
-    top: 8em;
+    top: 3em;
     max-width: 1440px;
 }
 
@@ -425,7 +430,7 @@ nav {
 }
 
 @media screen and (min-width: 1440px) {
-    .big {
+    .img-main-header {
         max-width: 1440px;
     }
     .background {
@@ -456,7 +461,7 @@ nav {
 }
 
 .news{
-    margin-bottom: 2em;
+    margin : 2em 0 2em 0;
 }
 
 /* BUTTONS */
@@ -494,6 +499,7 @@ nav {
         display: block;
         text-align: center;
         transition: .3s;
+        margin-bottom: 10em;
          &:hover{
             padding-top: 1em;
             padding-bottom: 1em;
