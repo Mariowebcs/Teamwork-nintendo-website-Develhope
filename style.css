@@ -1,0 +1,25 @@
+.line {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border: 0.1px solid rgb(113, 113, 113);
+}
+
+.line-2 {
+  margin-top: 10px;
+  border: 0.1px solid rgb(113, 113, 113);
+}
+
+.card-container {
+  overflow-x: scroll;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.text {
+  margin-top: 20px;
+}
+
+/*# sourceMappingURL=prova.css.map */
