@@ -1,0 +1,204 @@
+/*TYPOGRAPHY*/
+html,
+body {
+  width: 100%;
+  font-size: 16px;
+  color: rgb(72, 72, 72);
+  font-family: "Museo Sans Rounded", sans-serif;
+}
+
+strong,
+h1,
+h2 {
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #E60012;
+  font-size: 1rem;
+}
+a:hover, a:focus {
+  color: #AC000D;
+}
+
+/* hr{
+    margin: 2em 0;
+    width: 100%;
+} */
+.section-text-main {
+  font-size: 1.2rem;
+  padding: 0 1em 0 0;
+}
+
+.section-title {
+  margin: 0.7em 0 1em 0;
+  font-size: 1.7rem;
+}
+
+.section-img-main {
+  margin: 0 0 2em 0;
+}
+
+.divider {
+  margin: 2em 0;
+}
+
+.news {
+  margin-bottom: 2em;
+}
+
+/* BUTTONS */
+.btn-sec, .btn-sec-see-all {
+  color: #fff;
+  background: #E60012;
+  border-radius: 0.3rem;
+  transition: 0.2s;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+.btn-sec-main {
+  margin: 1.8em auto;
+  display: block;
+  text-align: center;
+  padding: 0.8em 1.5em;
+}
+.btn-sec-main:hover, .btn-sec-main:focus {
+  background: #AC000D;
+  padding: 1.1em 1.8em;
+  color: #fff;
+}
+.btn-sec-see-all {
+  padding: 0.8em 1em;
+  width: 100%;
+  display: block;
+  text-align: center;
+  transition: 0.3s;
+}
+.btn-sec-see-all:hover {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-right: 1.5em;
+  padding-left: 1.5em;
+  color: #fff;
+  background: #AC000D;
+}
+
+.card-hover {
+  color: rgb(72, 72, 72);
+}
+.card-hover:hover {
+  color: #E60012;
+}
+
+/* CARD */
+.info {
+  margin: 0.8em 0;
+  font-weight: 300;
+}
+
+.header-text {
+  height: 3.3rem;
+}
+
+.read-more {
+  border-bottom: 2px solid #E60012;
+  font-size: 1rem;
+  display: inline-block;
+  margin: 1.5em 0 0 0;
+  font-weight: 600;
+}
+
+.big {
+  width: 100%;
+  margin: 0 0 3em 0;
+}
+
+.card-description {
+  margin: 1.5em 0 0.8em 0;
+  font-size: 1rem;
+}
+
+.card-image {
+  border-radius: 0.3em;
+  width: 100%;
+}
+
+/* CARD SMALL */
+.card-small {
+  width: 48%;
+  margin: 0 0 2em 0;
+}
+
+.card-body-small {
+  height: 5rem;
+}
+
+/* LAYOUT */
+.container {
+  width: 95%;
+  margin: 1em auto;
+}
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .section-text-main {
+    font-size: 1.3rem;
+  }
+  .big {
+    max-width: 48%;
+  }
+  .flex {
+    flex-direction: row;
+  }
+  .card-small {
+    width: 22%;
+  }
+  .promotional-subtitle {
+    line-height: 1.4;
+  }
+}
+@media (min-width: 1050px) {
+  .container {
+    /* width: 90%; */
+    max-width: 71.5rem;
+  }
+  .section-text-main {
+    font-size: 1.3rem;
+  }
+  .btn-sec-main {
+    display: inline-block;
+  }
+  .btn-sec-see-all {
+    width: 25%;
+  }
+  .flex {
+    flex-direction: row;
+  }
+  .card-image {
+    width: 100%;
+    height: 100%;
+  }
+  .card-small {
+    width: 23%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
