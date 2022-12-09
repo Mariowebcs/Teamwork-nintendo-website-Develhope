@@ -1,22 +1,11 @@
 
 
-body{
-    margin: 0;
-    padding: 0;
-  
-}
-
-
-
-
-
 
 .line{
     margin-top: 10px;
     margin-left: 20px;
     margin-right:20px ;
-   color: gray;
-  
+    color: gray;
     
 }
 
@@ -38,9 +27,12 @@ body{
     padding-top: 20px;
 }
 
-a{
-    text-decoration: none;
-    color: black;
-}
+// a{
+//     text-decoration: none;
+//     color: black;
+// }
 
-
+.container{
+    width: 95%;
+    max-width: 71.5rem;
+  }
