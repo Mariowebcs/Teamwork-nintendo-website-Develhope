@@ -1,6 +1,7 @@
 /*TYPOGRAPHY*/
 html,
 body {
+  width: 100%;
   font-size: 16px;
   color: rgb(72, 72, 72);
   font-family: "Museo Sans Rounded", sans-serif;
@@ -25,11 +26,6 @@ a {
 
 header {
   margin-bottom: 5em;
-}
-
-.section-gaming-news {
-  position: relative;
-  top: 5em;
 }
 
 a,
@@ -151,7 +147,7 @@ nav {
 }
 .image img {
   display: block;
-  width: 95vw;
+  width: 95%;
   height: auto;
   margin: auto;
   border-radius: 5px;
@@ -405,6 +401,7 @@ nav {
 
 .section-img-main {
   margin: 0 0 2em 0;
+  width: 100%;
 }
 
 .divider {
@@ -467,7 +464,7 @@ nav {
 }
 
 .header-text {
-  height: 3.3rem;
+  height: 4rem;
 }
 
 .read-more {
@@ -483,7 +480,7 @@ nav {
   border-bottom-color: #AC000D;
 }
 
-.big {
+.big-sec {
   width: 100%;
   margin: 0 0 3em 0;
 }
@@ -493,9 +490,10 @@ nav {
   font-size: 1rem;
 }
 
-.card-image {
+.card-image-sec {
   border-radius: 0.3em;
   width: 100%;
+  height: 100%;
 }
 
 /* CARD SMALL */
@@ -514,7 +512,7 @@ nav {
   width: 95%;
 }
 
-.flex {
+.flex-sec {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -531,21 +529,17 @@ nav {
   .section-text-main {
     font-size: 1.3rem;
   }
-  .big {
-    max-width: 48%;
+  .big-sec {
+    max-width: 48.5%;
   }
-  .flex {
+  .flex-sec {
     flex-direction: row;
   }
   .card-small {
-    width: 22%;
+    width: 23%;
   }
   .promotional-subtitle {
     line-height: 1.4;
-  }
-  #ib {
-    display: inline-block;
-    width: 20%;
   }
 }
 @media (min-width: 1050px) {
@@ -562,12 +556,8 @@ nav {
   .btn-sec-see-all {
     width: 25%;
   }
-  .flex {
+  .flex-sec {
     flex-direction: row;
-  }
-  .card-image {
-    width: 100%;
-    height: 100%;
   }
   .card-small {
     width: 23%;
