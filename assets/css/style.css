@@ -4,6 +4,7 @@ body {
   font-size: 16px;
   color: rgb(72, 72, 72);
   font-family: "Museo Sans Rounded", sans-serif;
+  overflow-x: hidden;
 }
 
 strong,
@@ -112,7 +113,7 @@ nav {
   gap: 1em;
 }
 
-.btn {
+.btn-header {
   text-decoration: none;
   cursor: pointer;
   padding: 4px;
@@ -441,6 +442,7 @@ nav {
   text-align: center;
   transition: 0.3s;
   margin-bottom: 10em;
+  text-decoration: none;
 }
 .btn-sec-see-all:hover {
   padding-top: 1em;
@@ -507,9 +509,9 @@ nav {
 }
 
 /* LAYOUT */
-.container {
+.container-sec {
+  margin: 0 auto;
   width: 95%;
-  margin: 1em auto;
 }
 
 .flex {
@@ -519,7 +521,7 @@ nav {
   align-items: center;
 }
 
-.flex-row {
+.flex-row-sec {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -541,9 +543,13 @@ nav {
   .promotional-subtitle {
     line-height: 1.4;
   }
+  #ib {
+    display: inline-block;
+    width: 20%;
+  }
 }
 @media (min-width: 1050px) {
-  .container {
+  .container-sec {
     /* width: 90%; */
     max-width: 71.5rem;
   }
@@ -566,6 +572,35 @@ nav {
   .card-small {
     width: 23%;
   }
+}
+.line {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: gray;
+}
+
+.card-container {
+  overflow-x: scroll;
+  margin-right: none;
+}
+
+.card-container::-webkit-scrollbar {
+  display: none;
+}
+
+.text {
+  margin-top: 20px;
+  padding-top: 20px;
+}
+
+.featured {
+  margin: 8em 0 3em 0;
+}
+
+.card-img-top:hover {
+  position: relative;
+  bottom: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */
