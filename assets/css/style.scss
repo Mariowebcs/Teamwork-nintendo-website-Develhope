@@ -12,7 +12,7 @@ html,
 body {
     width: 100%;
     font-size: 16px;
-    color: rgb(72, 72, 72);
+    color: $text_color;
     font-family: 'Museo Sans Rounded', sans-serif;
     overflow-x: hidden;
 }
@@ -484,12 +484,11 @@ nav {
 
 
 .section-text-main {
-    font-size: 1.2rem;
-    padding: 0 1em 0 0;
+    font-size: 1.125rem;
+    max-width: 70ch;
 }
 
 .section-title {
-    margin: .7em 0 1em 0;
     font-size: 1.7rem;
 }
 
@@ -512,7 +511,6 @@ nav {
     color: #fff;
     background: $basis_red;
     border-radius: .3rem;
-    transition: .2s;
     font-size: 1.1rem;
     transition: .3s;
 
@@ -520,10 +518,9 @@ nav {
 
 
     &-main {
-        margin: 1.8em auto;
         display: block;
         text-align: center;
-        padding: .8em 1.5em;
+        padding: .75em 1.8em;
 
         &:hover,
         &:focus {
@@ -536,7 +533,7 @@ nav {
 
     &-see-all {
         @extend .btn-sec;
-        padding: .8em 1em;
+        padding: .8em 1.5em;
         width: 100%;
         display: block;
         text-align: center;
@@ -638,6 +635,13 @@ nav {
     flex-wrap: wrap;
 }
 
+.section-button{
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: space-between;
+}
+
 
 
 
@@ -667,6 +671,12 @@ nav {
 }
 
 @media(min-width: 1050px) {
+
+    .btn-sec-main{
+        display: inline;
+    }
+
+
     .container-sec {
         /* width: 90%; */
         max-width: 71.5rem;
@@ -674,9 +684,6 @@ nav {
 
     .section-text-main {
         font-size: 1.3rem;
-    }
-
-    .btn-sec-main {
         display: inline-block;
     }
 

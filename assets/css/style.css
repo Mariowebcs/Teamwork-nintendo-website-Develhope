@@ -390,12 +390,11 @@ nav {
   }
 }
 .section-text-main {
-  font-size: 1.2rem;
-  padding: 0 1em 0 0;
+  font-size: 1.125rem;
+  max-width: 70ch;
 }
 
 .section-title {
-  margin: 0.7em 0 1em 0;
   font-size: 1.7rem;
 }
 
@@ -417,15 +416,13 @@ nav {
   color: #fff;
   background: #E60012;
   border-radius: 0.3rem;
-  transition: 0.2s;
   font-size: 1.1rem;
   transition: 0.3s;
 }
 .btn-sec-main {
-  margin: 1.8em auto;
   display: block;
   text-align: center;
-  padding: 0.8em 1.5em;
+  padding: 0.75em 1.8em;
 }
 .btn-sec-main:hover, .btn-sec-main:focus {
   background: #AC000D;
@@ -433,7 +430,7 @@ nav {
   color: #fff;
 }
 .btn-sec-see-all {
-  padding: 0.8em 1em;
+  padding: 0.8em 1.5em;
   width: 100%;
   display: block;
   text-align: center;
@@ -525,6 +522,12 @@ nav {
   flex-wrap: wrap;
 }
 
+.section-button {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 @media (min-width: 768px) {
   .section-text-main {
     font-size: 1.3rem;
@@ -543,14 +546,15 @@ nav {
   }
 }
 @media (min-width: 1050px) {
+  .btn-sec-main {
+    display: inline;
+  }
   .container-sec {
     /* width: 90%; */
     max-width: 71.5rem;
   }
   .section-text-main {
     font-size: 1.3rem;
-  }
-  .btn-sec-main {
     display: inline-block;
   }
   .btn-sec-see-all {
