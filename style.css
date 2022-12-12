@@ -1,6 +1,4 @@
- body {
-  width: 100%;
-  height: 100vh;
+body {
   padding: 0px;
   margin: 0px;
   font-size: 16px;
@@ -21,11 +19,11 @@ div {
 
 section.initial-footer {
   background-color: #E60012;
-  color: rgb(255, 255, 255);
-  padding: 2.25rem 1rem;
+  padding: 1.5rem 1rem;
 }
 
 div.red-banner {
+  color: rgb(255, 255, 255);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -33,6 +31,9 @@ div.red-banner {
 }
 div.red-banner a:hover {
   color: inherit;
+}
+div.red-banner a:visited {
+  color: rgb(255, 255, 255);
 }
 
 #ninlogo {
@@ -43,8 +44,13 @@ div.red-banner a:hover {
 div.social {
   display: flex;
   gap: 2rem;
-  font-size: 32px;
+  font-size: 2rem;
   padding-top: 10px;
+  color: rgb(255, 255, 255);
+}
+
+div.social > a, i {
+  color: rgb(255, 255, 255);
 }
 
 section.middle-footer {
@@ -108,57 +114,59 @@ div.privacylogo {
 }
 
 section.end-footer {
-  width: 100%;
   background-color: rgb(36, 36, 36);
   color: rgb(255, 255, 255);
-  text-align: center;
-  padding: 2rem 1rem 114px;
-  position: static;
-}
-
-div.end-container {
-  max-width: 90rem;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 8em 4em;
 }
 
 div.flexbox-end {
   display: flex;
   flex-direction: column;
 }
-div.flexbox-end .last-row {
-  display: block;
-}
 
 div.flexbox-contact {
   display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 2rem;
 }
 div.flexbox-contact a {
   text-decoration: none;
+  font-size: 0.75rem;
 }
 div.flexbox-contact a:hover {
   color: rgb(255, 255, 255);
   border-bottom: solid 2px rgb(255, 255, 255);
   transition: 200ms;
 }
+div.flexbox-contact span {
+  padding: 0.2em;
+}
+
+.language-select-link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+}
 
 svg {
-  width: 44px;
+  width: 42px;
   height: 36px;
 }
 
 span.change-region {
-  display: inline-flex;
+  display: flex;
   align-items: center;
   justify-content: center;
 }
 
-span.change-region-text {
-  padding-left: 5px;
+.paragraph {
+  font-size: 0.7rem;
+  max-width: 60em;
 }
 
 @media (min-width: 429px) {
@@ -166,7 +174,7 @@ span.change-region-text {
     display: grid;
     margin: 1rem auto;
     justify-content: center;
-    grid-template-columns: repeat(2, 15.625rem);
+    grid-template-columns: repeat(2, 1fr);
     row-gap: 2rem;
   }
   div.grid-middle div {
@@ -184,8 +192,11 @@ span.change-region-text {
     display: grid;
     margin: 1rem auto;
     justify-content: center;
-    grid-template-columns: repeat(3, 15.625rem);
+    grid-template-columns: repeat(3, 1fr);
     row-gap: 2rem;
+  }
+  div.social {
+    gap: 4rem;
   }
 }
 @media (min-width: 1025px) {
@@ -193,8 +204,9 @@ span.change-region-text {
     display: grid;
     margin: 1rem auto;
     justify-content: center;
-    grid-template-columns: repeat(4, 15.625rem);
+    grid-template-columns: repeat(4, 1fr);
     row-gap: 2rem;
+    padding-left: 2em;
   }
   div.privacylogo {
     display: flex;
@@ -204,11 +216,11 @@ span.change-region-text {
   div.flexbox-end {
     display: flex;
     flex-direction: row;
-    align-items: center;
-    margin: auto;
+    justify-content: space-between;
   }
-  div.flexbox-end div.flexbox-contact {
-    padding-left: 6rem;
+  .d-flex {
+    flex-direction: row;
+    align-items: center;
   }
 }
 @media (min-width: 1440px) {
