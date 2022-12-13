@@ -103,7 +103,12 @@ nav {
 }
 
 #search {
-  width: 450px;
+  width: 330px;
+}
+
+.list_nav a {
+  font-size: 0.875rem;
+  font-weight: 500;
 }
 
 .list_nav {
@@ -415,21 +420,27 @@ nav {
 }
 
 /* BUTTONS */
+.p-rel {
+  position: relative;
+  bottom: 1em;
+}
+
 .btn-sec, .btn-sec-see-all {
   color: #fff;
   background: #E60012;
   border-radius: 0.3rem;
-  font-size: 1.1rem;
+  font-size: 1.125rem;
   transition: 0.3s;
+  font-weight: 600;
 }
 .btn-sec-main {
   display: block;
   text-align: center;
-  padding: 0.75em 1.8em;
+  padding: 0.7em 1.8em;
 }
 .btn-sec-main:hover, .btn-sec-main:focus {
   background: #AC000D;
-  padding: 1.1em 1.8em;
+  padding: 1em 2.2em;
   color: #fff;
 }
 .btn-sec-see-all {

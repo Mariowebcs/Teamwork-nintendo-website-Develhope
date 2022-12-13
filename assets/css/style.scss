@@ -4,6 +4,8 @@
 $text_color: rgb(72, 72, 72);
 $basis_red: #E60012;
 $effect_red: #AC000D;
+$white: rgb(255, 255, 255);
+$black: rgb(36, 36, 36);
 
 
 // INSERT IN A CSS RESET FILE VALID FOR ALL
@@ -132,7 +134,12 @@ nav {
 
 #search {
     @extend select;
-    width: 450px;
+    width: 330px;
+}
+
+.list_nav  a{
+    font-size: .875rem;
+    font-weight: 500;
 }
 
 .list_nav {
@@ -512,25 +519,29 @@ nav {
 
 /* BUTTONS */
 
+.p-rel{
+    position: relative;
+    bottom: 1em;
+}
+
 .btn-sec {
     color: #fff;
     background: $basis_red;
     border-radius: .3rem;
-    font-size: 1.1rem;
+    font-size: 1.125rem;
     transition: .3s;
-
-
+    font-weight: 600;
 
 
     &-main {
         display: block;
         text-align: center;
-        padding: .75em 1.8em;
+        padding: .7em 1.8em;
 
         &:hover,
         &:focus {
             background: $effect_red;
-            padding: 1.1em 1.8em;
+            padding: 1em 2.2em;
             color: #fff;
 
         }
@@ -744,11 +755,7 @@ nav {
 
 
 // FOOTER
-$red1: #E60012;
-$red2: #AC000D;
-$color-text: rgb(72, 72, 72);
-$white: rgb(255, 255, 255);
-$black: rgb(36, 36, 36);
+
 
 
 section {
@@ -761,7 +768,7 @@ div {
 
 
 section.initial-footer {
-    background-color: $red1;
+    background-color: $basis_red;
     padding: 1.5rem 1rem;
 }
 
@@ -859,15 +866,15 @@ div.grid-middle {
 
             a {
                 margin: 0em 0em 1em;
-                color: $red1;
+                color: $basis_red;
                 text-decoration: none;
                 font-size: 1rem;
                 font-weight: 600;
             }
 
             a:hover {
-                color: $red2;
-                border-bottom: solid 2px $red2;
+                color: $effect_red;
+                border-bottom: solid 2px $effect_red;
                 transition: 200ms;
             }
         }
