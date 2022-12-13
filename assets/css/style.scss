@@ -635,7 +635,7 @@ nav {
     flex-wrap: wrap;
 }
 
-.section-button{
+.section-button {
     display: flex;
     flex-direction: column;
     // align-items: center;
@@ -672,7 +672,7 @@ nav {
 
 @media(min-width: 1050px) {
 
-    .btn-sec-main{
+    .btn-sec-main {
         display: inline-block;
     }
 
@@ -695,7 +695,7 @@ nav {
         flex-direction: row;
     }
 
-  
+
 
     .card-small {
         width: 23%;
@@ -745,12 +745,6 @@ $color-text: rgb(72, 72, 72);
 $white: rgb(255, 255, 255);
 $black: rgb(36, 36, 36);
 
-body {
-    padding: 0px;
-    margin: 0px;
-    font-size: 16px;
-    color: $color-text;
-}
 
 section {
     display: block;
@@ -763,25 +757,30 @@ div {
 
 section.initial-footer {
     background-color: $red1;
-    padding: 1.5rem 1rem ;
+    padding: 1.5rem 1rem;
 }
+
 div.red-banner {
     color: $white;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+
     a:hover {
         color: inherit;
     }
-    a:visited{
+
+    a:visited {
         color: $white;
     }
 }
+
 #ninlogo {
     width: 240px;
     height: 75px;
 }
+
 div.social {
     display: flex;
     gap: 2rem;
@@ -790,55 +789,76 @@ div.social {
     color: $white;
 }
 
-div.social > a,i{
-    color: $white;  
+div.social>a,
+i {
+    color: $white;
+}
+
+.social-link{
+    font-size: 2rem;
 }
 
 section.middle-footer {
     padding: 2rem 1rem;
     background-color: $white;
 }
+
 div.middle-container {
     max-width: 90rem;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
+
 div.grid-middle {
     display: grid;
     margin: 1rem auto;
     justify-content: center;
     grid-template-columns: 15.625rem;
     row-gap: 2rem;
+
     div {
         border-left: solid 1px rgb(218, 218, 218);
         padding-left: 1.5rem;
         font-size: 1rem;
         font-weight: 700;
         width: 100%;
-        }
-    div>a {
+    }
+
+    .footer-title-link {
         color: rgb(36, 36, 36);
         text-decoration: none;
+        h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1em;
+        }
     }
-    div>a:hover {
-        border-bottom: solid 2px rgb(36, 36, 36);
-        transition: 200ms;
+
+    .footer-title-link:hover h3 {
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        color: rgb(36, 36, 36);
+        text-underline-offset: 6px;
     }
+
     ul {
         font-size: 0.875rem;
         list-style: none;
         margin: 0px;
         padding: 0px;
-        
+
         li {
             margin-top: 0.5rem;
+
             a {
                 margin: 0em 0em 1em;
                 color: $red1;
                 text-decoration: none;
+                font-size: 1rem;
+                font-weight: 600;
             }
+
             a:hover {
                 color: $red2;
                 border-bottom: solid 2px $red2;
@@ -847,6 +867,7 @@ div.grid-middle {
         }
     }
 }
+
 div.privacylogo {
     display: flex;
     justify-content: center;
@@ -860,6 +881,7 @@ section.end-footer {
     // text-align: center;
     padding: 8em 4em;
 }
+
 // div.end-container {
 //     max-width: 90rem;
 // }
@@ -876,26 +898,29 @@ div.flexbox-end {
 
 div.flexbox-contact {
     display: flex;
+
     a {
         text-decoration: none;
         font-size: .75rem;
     }
+
     a:hover {
         color: $white;
         border-bottom: solid 2px $white;
         transition: 200ms;
     }
-    span{
+
+    span {
         padding: .2em;
     }
 }
 
-.language-select-link{
+.language-select-link {
     color: $white;
     text-decoration: none;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -907,13 +932,14 @@ svg {
     width: 42px;
     height: 36px;
 }
+
 span.change-region {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.paragraph{
+.paragraph {
     font-size: .7rem;
     max-width: 60em;
 }
@@ -927,11 +953,13 @@ span.change-region {
         justify-content: center;
         grid-template-columns: repeat(2, 1fr);
         row-gap: 2rem;
+
         div {
             font-size: 1.125rem;
         }
     }
 }
+
 @media (min-width: 768px) {
     div.red-banner {
         width: 100%;
@@ -939,6 +967,7 @@ span.change-region {
         flex-direction: row;
         justify-content: space-between;
     }
+
     div.grid-middle {
         display: grid;
         margin: 1rem auto;
@@ -947,11 +976,12 @@ span.change-region {
         row-gap: 2rem;
     }
 
-      div.social{
-        gap:  4rem;
+    div.social {
+        gap: 4rem;
     }
 
 }
+
 @media (min-width: 1025px) {
     div.grid-middle {
         display: grid;
@@ -961,11 +991,13 @@ span.change-region {
         row-gap: 2rem;
         padding-left: 2em;
     }
+
     div.privacylogo {
         display: flex;
         justify-content: flex-end;
         margin-bottom: 10px;
     }
+
     div.flexbox-end {
         display: flex;
         flex-direction: row;
@@ -975,9 +1007,9 @@ span.change-region {
         // }
     }
 
-    .d-flex{
+    .d-flex {
         flex-direction: row;
-        align-items: center;     
+        align-items: center;
     }
 
 }
@@ -989,30 +1021,37 @@ span.change-region {
         display: grid;
         margin: 1rem auto;
         justify-content: center;
-        grid-template-areas: 
-        'about shop myNintendo support parents community'
-        'about shop myNintendo support privacy community';
+        grid-template-areas:
+            'about shop myNintendo support parents community'
+            'about shop myNintendo support privacy community';
         row-gap: 2rem;
         column-gap: 1rem;
     }
+
     .about {
         grid-area: about;
     }
+
     .shop {
         grid-area: shop;
     }
-    .my-nintendo{
+
+    .my-nintendo {
         grid-area: myNintendo;
     }
+
     .support {
         grid-area: support;
     }
+
     .parents {
         grid-area: parents;
     }
-    .community{
+
+    .community {
         grid-area: community;
     }
+
     .privacy {
         grid-area: privacy;
     }
