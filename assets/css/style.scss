@@ -80,11 +80,16 @@ nav {
     display: flex;
     gap: 1em;
 
+
     div:first-of-type {
         display: flex;
         justify-content: center;
         align-items: center;
         background-color: $basis_red;
+
+        nav a {
+            color: $text_color;
+        }
 
         a {
             display: flex;
@@ -789,13 +794,13 @@ div.social {
     color: $white;
 }
 
-div.social>a,
-i {
-    color: $white;
+
+.social-link {
+    font-size: 2rem;
 }
 
-.social-link{
-    font-size: 2rem;
+.social-link  i{
+    color: $white;
 }
 
 section.middle-footer {
@@ -829,6 +834,7 @@ div.grid-middle {
     .footer-title-link {
         color: rgb(36, 36, 36);
         text-decoration: none;
+
         h3 {
             font-size: 1.2rem;
             margin-bottom: 1em;

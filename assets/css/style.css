@@ -70,6 +70,9 @@ nav {
   align-items: center;
   background-color: #E60012;
 }
+.left div:first-of-type nav a {
+  color: rgb(72, 72, 72);
+}
 .left div:first-of-type a {
   display: flex;
   padding: 0 1em;
@@ -637,13 +640,12 @@ div.social {
   color: rgb(255, 255, 255);
 }
 
-div.social > a,
-i {
-  color: rgb(255, 255, 255);
-}
-
 .social-link {
   font-size: 2rem;
+}
+
+.social-link i {
+  color: rgb(255, 255, 255);
 }
 
 section.middle-footer {
