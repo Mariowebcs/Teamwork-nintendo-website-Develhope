@@ -25,7 +25,7 @@ a {
 }
 
 header {
-  margin-bottom: 5em;
+  margin-bottom: 6em;
 }
 
 a,
@@ -255,11 +255,12 @@ nav {
 }
 
 .separator {
-  width: 95vw;
-  margin: auto;
-  position: relative;
-  top: 3em;
+  width: 95%;
   max-width: 1440px;
+  margin: auto;
+}
+.separator-sec {
+  width: 100%;
 }
 
 @media screen and (max-width: 1025px) {
@@ -308,11 +309,6 @@ nav {
   .nav_mobile {
     display: block;
   }
-  .separator {
-    position: relative;
-    width: 95%;
-    top: 5em;
-  }
 }
 @media screen and (max-width: 375px) {
   .background {
@@ -342,6 +338,9 @@ nav {
 @media screen and (min-width: 700px) {
   .background {
     height: calc(100% - 8.2em);
+  }
+  header {
+    margin-bottom: 10em;
   }
 }
 @media screen and (min-width: 825px) {
@@ -449,7 +448,6 @@ nav {
   display: block;
   text-align: center;
   transition: 0.3s;
-  margin-bottom: 10em;
   text-decoration: none;
 }
 .btn-sec-see-all:hover {
@@ -763,7 +761,6 @@ div.flexbox-contact span {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2em;
   width: 100%;
 }
 
