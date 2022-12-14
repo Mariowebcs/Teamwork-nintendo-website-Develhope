@@ -1,0 +1,205 @@
+html,
+body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  color: rgb(72, 72, 72);
+}
+
+.link {
+  display: block;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transform: scale(1.15);
+  transition: transform 200ms ease-in-out 0s;
+}
+
+.over {
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  transition: transform 200ms ease-in-out 0s;
+  background: none;
+}
+
+.Charactersstyles:hover .background {
+  transform: scale(1);
+}
+.Charactersstyles:hover .over:hover {
+  transform: scale(1.15);
+}
+
+.BestSellerDigitali {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding-left: 10%;
+}
+
+h1 {
+  text-align: start;
+  margin: 0px;
+  padding: 0px;
+}
+
+.title_Best_seller {
+  font-size: 1.3125rem;
+  margin-right: 1rem;
+  margin-bottom: 0px;
+  text-align: initial;
+  padding-right: 1rem;
+  border-right: 1px solid rgb(218, 218, 218);
+}
+
+.card:hover .card-img-top {
+  position: relative;
+  bottom: 1em;
+}
+.card:hover .card-title {
+  color: #E60012;
+}
+
+.heart {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  appearance: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 1em;
+  font-family: inherit;
+  line-height: 1;
+  color: rgb(230, 0, 18);
+  transition: color 200ms ease-in-out 0s;
+}
+
+.svg {
+  width: 40px;
+  height: 40px;
+  fill: white;
+  fill-opacity: 1;
+  stroke: #E60012;
+  stroke-width: 4;
+  stroke-opacity: 1;
+}
+.svg:hover {
+  fill: white;
+  fill-opacity: 1;
+  stroke: #ac000d;
+  stroke-width: 4;
+  stroke-opacity: 1;
+}
+
+.heart-filled {
+  background-color: red;
+  color: white;
+  line-height: 1;
+  color: #E60012;
+  border-color: #E60012;
+  border-width: 3px;
+  font-size: 5px;
+}
+
+.heart-outline {
+  animation: 0s ease 0s 1 normal none running none;
+  border: 2px solid #E60012;
+  line-height: 1;
+  background-color: #E60012;
+  color: #E60012;
+}
+
+.sparks {
+  display: none;
+}
+
+.heart:hover .sparks {
+  color: #ac000d;
+  display: contents;
+  transition-duration: 10s;
+  transition-timing-function: ease-out;
+}
+
+.See_full_list2 {
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  border: 1px solid white;
+  text-align: center;
+  background-color: #E60012;
+  border-radius: 2%;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
+.See_full_list2:hover {
+  transform: scale(1.1);
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  transition: all 300ms ease-in-out 0s;
+  font-weight: 700;
+  border: unset;
+  color: rgb(255, 255, 255);
+}
+
+.full_list {
+  color: #E60012;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.full_list:hover {
+  color: #ac000d;
+}
+
+a {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .gridCharacters {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  .Charactersstyles {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+  }
+  .card1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

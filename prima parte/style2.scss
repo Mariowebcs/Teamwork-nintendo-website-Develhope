@@ -2,36 +2,51 @@ $light-red: #E60012;
 $dark-red: #ac000d;
 html,
 body {
-  
+
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
     font-family: museo-sans, -apple-system, BlinkMacSystemFont, sans-serif;
     font-size: 16px;
     line-height: 1.4;
     color: rgb(72, 72, 72);
 }
 
-h1:first-child {
-    padding-left: 7%;
-}
+// .Characters {
+//     padding-left: 5%;
+//     font-size: 1.35rem
+// }
 
-.gridCharacters {
-    display: flex;
-    padding-left: 5%;
-    padding-right: 5%;
-    gap: 2%;
+// .gridCharacters {
+//     display: flex;
+//     flex-direction: column;
+//     padding-left: 5%;
+//     padding-right: 5%;
+//     gap: 2%;
     
-    padding-bottom: 5%;
+//     padding-bottom: 5%;
+//     width: 90%;
    
-}
-.Charactersstyles {
-    display: flex;
-    flex-direction: column;
-    
-}
+// }
+// .Charactersstyles {
+//     display: flex;
+//     flex-direction: column;
+//     width: 100%;
+//     height: 100%;
+   
+// }
+// .card1 {
+// display: flex;
+// flex-direction: row;
+// height: 100%;
+// gap: 5%;
+// }
 
-.nameImage {
-    color: rgb(72, 72, 72);
-    margin: 0px;
-}
+// .nameImage {
+//     color: rgb(72, 72, 72);
+//     margin: 0px;
+//     font-size: 1.125rem
+// }
 
 .link {
     display: block;
@@ -45,9 +60,9 @@ h1:first-child {
     margin-bottom: 0.5rem;
 }
 
-.secondImage {
-    height: 100%;  
-}
+// .secondImage {
+//     height: 100%;  
+// }
 
 .background {
     position: absolute;
@@ -82,9 +97,9 @@ h1:first-child {
 }
 }
 
-.hr {
-    border-top: 1px solid rgb(72, 72, 72);
-}
+// .hr {
+//     border-top: 1px solid rgb(72, 72, 72);
+// }
 // schede
 a {
     text-decoration: none;
@@ -93,6 +108,7 @@ a {
 .totCard {
     overflow: scroll;
     padding-top: 5%;
+    width: 100%;
   
     
 }
@@ -102,9 +118,6 @@ a {
     align-items: center;
     gap: 10px;
     padding-left: 10%;
-    text-align: center;
-    width: 100%;
-   
 }
 h1 {
      text-align: start;
@@ -112,12 +125,12 @@ h1 {
      padding: 0px;
 }
 .title_Best_seller {
-   border-right: 1px solid rgb(182, 182, 182);
-//  height: 2rem;
-//  text-align: center;
-    width: 30%;
-    font-size: 28px;
-    color: rgb(72, 72, 72);
+    font-size: 1.3125rem;
+    margin-right: 1rem;
+    margin-bottom: 0px;
+    text-align: initial;
+    padding-right: 1rem;
+    border-right: 1px solid rgb(218, 218, 218);
 }
 
 // .linea {
@@ -145,14 +158,21 @@ h1 {
     display: flex;
     gap: 10px;
     padding-left: 10%;
+    width: 100%;
 }
 
-.left {
-    border-width: 0;
-    margin: 0;
-    padding: 0;
-    position: absolute;
-}
+// .left {
+//     border-width: 0;
+//     margin: 0;
+//     padding: 0;
+//     position: absolute;
+// }
+// .right{
+//     border-width: 0;
+//     margin: 0;
+//     padding: 0;
+//     position: absolute;
+// }
 
 #firstCard {
     border-width: 0;
@@ -166,7 +186,8 @@ h1 {
     border: grey;
     opacity: 20%;
     width: 50px;
-    height: 350px;
+    height: 20rem;
+    
 }
 
 .left:hover,
@@ -176,15 +197,16 @@ h1 {
 } 
 
 .card {
+    display: flex;
+    flex-direction: column;
     border: 1px solid rgb(202, 202, 202);
-    width: 100%;
-    height: 100%;
+    width:100%;
+   
 }
 
 .image {
-    width: 300px;
-    height: 169px;
-    box-sizing: border-box;
+    width: 100%;
+    height: 10rem;
 }
 
 .card:hover .image {
@@ -234,7 +256,6 @@ h1 {
 .end {
     display: flex;
     justify-content: space-between;
-    // grid-template-rows: 1fr;
     gap: 5px;
     .containerHeart {
         
@@ -257,9 +278,9 @@ h1 {
 .Nintendo {
     color: rgb(72, 72, 72);
     padding-left: 0.5rem;
- border-left: 2px solid $light-red;
- margin: 0px;
-
+    border-left: 2px solid $light-red;
+    margin: 0px;
+    font-weight: 0.875rem;
 }
 
 // bottoe full list fine card 
@@ -297,12 +318,24 @@ h1 {
 
 // bottone like
 
+// .spark {
+//     stroke-dasharray: 8;
+//     stroke-dashoffset: 24;
+// }
+
 .heart {
-    width: 40px;
-    height: 40px;
-    background-color: white;
-    border: none;
+     display: flex;
+    -webkit-box-align: center;
     align-items: center;
+    appearance: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-family: inherit;
+    line-height: 1;
+    color: rgb(230, 0, 18);
+    transition: color 200ms ease-in-out 0s;
    
 }
 
@@ -354,7 +387,57 @@ h1 {
     .sparks{
     color: $dark-red;
     display: contents;
-    transition-property: display;
+   
     transition-duration: 10s;
+    transition-timing-function: ease-out;
     }
 }
+
+
+@media (min-width: 768px) {
+    .gridCharacters {
+        display: flex;
+        flex-direction: row;
+        padding-left: 5%;
+        padding-right: 5%;
+        gap: 2%;
+        padding-bottom: 5%;
+        width: 90%;
+       
+    }
+    .Charactersstyles {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        
+    }
+    .card1 {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    
+    }
+}
+
+
+
+// @media (min-width: 429px){
+//     .Nintendo{
+//     font-size: 0.675rem;
+// }
+
+// .nameImage {
+    
+//     font-size: 1.3125rem
+// }
+
+// .Characters {
+//     font-size: 1.35rem
+    
+// }
+// .title_Best_seller {
+//     font-size: 1.75rem;
+// }
+
+// }
