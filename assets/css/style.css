@@ -14,11 +14,6 @@ h2 {
   font-weight: 600;
 }
 
-img {
-  max-width: 100%;
-  display: block;
-}
-
 a {
   text-decoration: none;
   font-size: 1rem;
@@ -34,7 +29,7 @@ a,
 #search {
   cursor: pointer;
   text-decoration: none;
-  transition: 0.2s;
+  transition: 0.1s;
 }
 
 a:hover,
@@ -167,6 +162,7 @@ nav {
   align-items: center;
   padding-top: 2em;
   width: 95%;
+  gap: 2em;
   max-width: 1440px;
   z-index: 2;
 }
@@ -448,6 +444,7 @@ nav {
   display: block;
   text-align: center;
   transition: 0.3s;
+  margin-bottom: 10em;
   text-decoration: none;
 }
 .btn-sec-see-all:hover {

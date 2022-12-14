@@ -31,10 +31,10 @@ h2 {
 //     border-style: solid none none;
 // }
 
-img {
-    max-width: 100%;
-    display: block;
-}
+// img {
+//     max-width: 100%;
+//     display: block;
+// }
 
 a {
     text-decoration: none;
@@ -53,7 +53,7 @@ a,
 #search {
     cursor: pointer;
     text-decoration: none;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 a:hover,
@@ -201,6 +201,7 @@ nav {
     align-items: center;
     padding-top: 2em;
     width: 95%;
+    gap: 2em;
     max-width: 1440px;
     z-index: 2;
 
