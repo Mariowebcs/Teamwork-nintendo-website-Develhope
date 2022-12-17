@@ -444,7 +444,7 @@ nav {
   display: block;
   text-align: center;
   transition: 0.3s;
-  margin-bottom: 10em;
+  margin-bottom: 3em;
   text-decoration: none;
 }
 .btn-sec-see-all:hover {
@@ -456,14 +456,20 @@ nav {
   background: #AC000D;
 }
 
-.card-hover {
-  color: rgb(72, 72, 72);
-}
+/* CARD */
 .card-hover:hover {
-  color: #E60012;
+  cursor: pointer;
 }
 
-/* CARD */
+.card-hover:hover .promotional-subtitle {
+  color: #E60012;
+  cursor: pointer;
+}
+
+.card-hover:hover .read-more {
+  color: #AC000D;
+}
+
 .info {
   margin: 0.8em 0;
   font-weight: 300;
@@ -576,6 +582,15 @@ nav {
     width: 23%;
   }
 }
+.c-hover:hover .card-title {
+  color: #E60012;
+}
+
+.c-hover:hover .card-img-top {
+  position: relative;
+  bottom: 1em;
+}
+
 .line {
   margin-top: 10px;
   margin-left: 20px;
@@ -599,11 +614,6 @@ nav {
 
 .featured {
   margin: 8em 0 3em 0;
-}
-
-.card-img-top:hover {
-  position: relative;
-  bottom: 1em;
 }
 
 section {

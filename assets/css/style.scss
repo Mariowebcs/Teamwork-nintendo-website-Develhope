@@ -557,7 +557,7 @@ nav {
         display: block;
         text-align: center;
         transition: .3s;
-        margin-bottom: 10em;
+        margin-bottom: 3em;
         text-decoration: none;
 
         &:hover {
@@ -575,15 +575,21 @@ nav {
 
 }
 
-.card-hover {
-    color: rgb(72, 72, 72);
 
-    &:hover {
-        color: $basis_red
-    }
-}
 
 /* CARD */
+.card-hover:hover{
+    cursor: pointer;
+}
+
+.card-hover:hover .promotional-subtitle{
+    color: $basis_red;
+    cursor: pointer;
+}
+
+.card-hover:hover .read-more{
+    color: $effect_red;
+}
 
 .info {
     margin: .8em 0;
@@ -724,6 +730,14 @@ nav {
 
 // SECTION FEATURED ONLINE STORE
 
+.c-hover:hover  .card-title{
+    color: $basis_red;
+}
+
+.c-hover:hover .card-img-top{
+    position: relative;
+    bottom:  1em;
+}
 
 .line {
     margin-top: 10px;
@@ -751,10 +765,10 @@ nav {
 }
 
 
-.card-img-top:hover {
-    position: relative;
-    bottom: 1em;
-}
+// .card-img-top:hover {
+//     position: relative;
+//     bottom: 1em;
+// }
 
 
 // FOOTER
