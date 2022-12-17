@@ -256,6 +256,23 @@ h1 {
   color: #AC000D;
 }
 
+.left,
+.right {
+  color: white;
+  border: grey;
+  opacity: 20%;
+  height: 100%;
+  background-color: rgb(72, 72, 72);
+  opacity: 50%;
+}
+
+.left:hover,
+.right:hover {
+  background-color: rgb(72, 72, 72);
+  opacity: 80%;
+  color: white;
+}
+
 a {
   text-decoration: none;
 }
