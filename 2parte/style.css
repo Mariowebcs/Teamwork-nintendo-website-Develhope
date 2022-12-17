@@ -1,3 +1,8 @@
+h2, h3, h4, h5 {
+  font-weight: 700;
+  letter-spacing: 0px;
+}
+
 html,
 body {
   margin: 0;
@@ -7,6 +12,38 @@ body {
   font-size: 16px;
   line-height: 1.4;
   color: rgb(72, 72, 72);
+}
+
+.CharactersTitle {
+  color: rgb(72, 72, 72);
+  font-size: 1.75rem;
+  line-height: 1.35;
+}
+
+.container-sec {
+  margin: 0 auto;
+  width: 95%;
+}
+
+.gridCharacters {
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+  margin-right: 0;
+}
+
+.card1 {
+  width: 100%;
+  height: 48%;
+}
+
+.Charactersstyles {
+  width: 48%;
+  height: 100%;
 }
 
 .link {
@@ -52,8 +89,7 @@ body {
 .BestSellerDigitali {
   display: flex;
   align-items: center;
-  gap: 10px;
-  padding-left: 10%;
+  margin: 0;
 }
 
 h1 {
@@ -63,12 +99,24 @@ h1 {
 }
 
 .title_Best_seller {
-  font-size: 1.3125rem;
   margin-right: 1rem;
   margin-bottom: 0px;
-  text-align: initial;
-  padding-right: 1rem;
   border-right: 1px solid rgb(218, 218, 218);
+  width: 70%;
+}
+
+.title_seller {
+  font-size: 1.5rem;
+  color: rgb(72, 72, 72);
+}
+
+.SeeFulllist {
+  width: 30%;
+}
+
+.card {
+  width: 17rem;
+  height: 100%;
 }
 
 .card:hover .card-img-top {
@@ -77,6 +125,24 @@ h1 {
 }
 .card:hover .card-title {
   color: #E60012;
+}
+
+.card-top {
+  width: 100%;
+  height: 8.5rem;
+}
+
+.card-title {
+  color: rgb(72, 72, 72);
+}
+
+.card-body {
+  width: 100%;
+  height: 15rem;
+}
+
+.card-title {
+  font-size: 1.2rem;
 }
 
 .heart {
@@ -90,8 +156,14 @@ h1 {
   font-size: 1em;
   font-family: inherit;
   line-height: 1;
-  color: rgb(230, 0, 18);
+  color: #AC000D;
   transition: color 200ms ease-in-out 0s;
+}
+.heart :hover .sparks {
+  color: #AC000D;
+  display: contents;
+  transition-duration: 10s;
+  transition-timing-function: ease-out;
 }
 
 .svg {
@@ -106,7 +178,7 @@ h1 {
 .svg:hover {
   fill: white;
   fill-opacity: 1;
-  stroke: #ac000d;
+  stroke: #AC000D;
   stroke-width: 4;
   stroke-opacity: 1;
 }
@@ -130,14 +202,18 @@ h1 {
 }
 
 .sparks {
+  color: #AC000D;
   display: none;
 }
 
-.heart:hover .sparks {
-  color: #ac000d;
-  display: contents;
-  transition-duration: 10s;
-  transition-timing-function: ease-out;
+.new {
+  width: 75%;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+}
+
+.border-left {
+  padding-left: 0.2rem;
 }
 
 .See_full_list2 {
@@ -150,8 +226,9 @@ h1 {
   text-align: center;
   background-color: #E60012;
   border-radius: 2%;
-  margin-left: 3rem;
-  margin-right: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  width: 100%;
 }
 .See_full_list2:hover {
   transform: scale(1.1);
@@ -173,9 +250,10 @@ h1 {
   color: #E60012;
   text-decoration: underline;
   font-weight: bold;
+  width: 100%;
 }
 .full_list:hover {
-  color: #ac000d;
+  color: #AC000D;
 }
 
 a {
@@ -186,19 +264,51 @@ a {
   .gridCharacters {
     display: flex;
     flex-direction: row;
+    align-items: center;
     width: 100%;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+  }
+  .card1 {
+    width: 49%;
   }
   .Charactersstyles {
     display: flex;
     flex-direction: column;
-    width: 50%;
-    height: 100%;
+    width: 47.8%;
   }
-  .card1 {
-    display: flex;
-    flex-direction: row;
+}
+@media (min-width: 429px) {
+  .CharactersTitle {
+    font-size: 1.75rem;
+    line-height: 1.35;
+  }
+  .Nintendo {
+    font-size: 0.675rem;
+  }
+  .nameImage {
+    font-size: 1.3125rem;
+  }
+  .Characters {
+    font-size: 1.35rem;
+  }
+  .title_Best_seller {
+    font-size: 1.75rem;
+  }
+}
+@media (min-width: 1050px) {
+  .container-sec {
+    width: 95%;
+  }
+}
+@media (min-width: 468px) {
+  .title_Best_seller {
     width: 100%;
-    height: 100%;
+  }
+
+  .SeeFulllist {
+    width: 40%;
+    
   }
 }
 
