@@ -109,9 +109,12 @@ body {
 .BestSellerDigitali {
     display: flex;
    align-items: center;
-    margin: 0;
-    
-    
+    margin: 0;  
+
+}
+
+.block{
+    display: inline-block;
 }
 
 
@@ -124,10 +127,13 @@ h1 {
 .title_Best_seller {
     margin-right: 1rem;
     margin-bottom: 0px;
-    //text-align: initial;
     border-right: 1px solid rgb(218, 218, 218);
-    width: 70%;
+    padding-right: 1rem;
 }
+
+
+
+
 
 .title_seller {
     font-size: 1.5rem;
@@ -260,15 +266,13 @@ color: $effect_red;
     border-radius: 2%;
     margin-left: 2rem;
     margin-right: 2rem;
-    width: 100%;
-
+    width: 160px;
 
     &:hover {
 
         // background-color: $effect-red;
         // color: white;
         transform: scale(1.10);
-
         display: inline-flex;
         -webkit-box-align: center;
         align-items: center;
@@ -279,12 +283,10 @@ color: $effect_red;
         cursor: pointer;
         transition: all 300ms ease-in-out 0s;
         font-weight: 700;
-
         border: unset;
-
         color: rgb(255, 255, 255);
-
     }
+
 
 }
 
@@ -362,12 +364,9 @@ a {
 
 @media (min-width: 1050px) {
 .container-sec {
-    width: 95%;
-}
+   max-width: 71.5rem;
 }
 
-@media (min-width: 468px) {
-    .title_Best_seller {
-        width: 100%;
-    }
+
 }
+
