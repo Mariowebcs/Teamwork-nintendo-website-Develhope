@@ -772,6 +772,13 @@ nav {
 
 
 // FOOTER
+
+
+footer{
+    position: relative;
+    top: 5em;
+}
+
 section {
     display: block;
 }
@@ -936,14 +943,14 @@ div.grid-end {
 div.flexbox-contact {
     display: flex;
     justify-content: center;
-    gap: 1rem;
+    gap: .5rem;
     font-weight: bold;
     a {
         margin: 0em 0em 1em;
         text-decoration: none;
         color: $white;
         font-weight: 400;
-        font-size: 0.72rem;
+        font-size: 10px;
     }
     a:hover {
         color: $white;
@@ -1162,7 +1169,7 @@ div.language-select {
 //     height: 100%;  
 // }
 
-.background {
+.background-sec {
     position: absolute;
     z-index: -1;
     top: 0px;
@@ -1186,7 +1193,7 @@ div.language-select {
 }
 
 .Charactersstyles:hover {
-    .background {
+    .background-sec {
         transform: scale(1);
     }
 
