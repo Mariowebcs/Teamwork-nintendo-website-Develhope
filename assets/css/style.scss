@@ -25,17 +25,6 @@ h2 {
     font-weight: 600;
 }
 
-// hr {
-//     color: #d6d6d6;
-//     height: 0px;
-//     border-style: solid none none;
-// }
-
-// img {
-//     max-width: 100%;
-//     display: block;
-// }
-
 a {
     text-decoration: none;
     font-size: 1rem;
@@ -552,12 +541,12 @@ nav {
 
     &-see-all {
         @extend .btn-sec;
-        padding: .8em 1.5em;
+        padding: 0.6em 1em;
         width: 100%;
         display: block;
         text-align: center;
         transition: .3s;
-        margin-bottom: 3em;
+        margin: 1.5em 0 3em 0;
         text-decoration: none;
 
         &:hover {
@@ -765,10 +754,6 @@ nav {
 }
 
 
-// .card-img-top:hover {
-//     position: relative;
-//     bottom: 1em;
-// }
 
 
 // FOOTER
@@ -776,7 +761,7 @@ nav {
 
 footer{
     position: relative;
-    top: 5em;
+    top: 3em;
 }
 
 section {
