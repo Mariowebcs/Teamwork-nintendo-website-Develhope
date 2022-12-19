@@ -126,7 +126,7 @@ nav {
     width: 330px;
 }
 
-.list_nav  a{
+.list_nav a {
     font-size: .875rem;
     font-weight: 500;
 }
@@ -168,6 +168,7 @@ nav {
     width: 100%;
     background-image: linear-gradient(rgb(160, 146, 246), rgb(213, 187, 218), rgb(253, 219, 197));
 }
+
 
 .image {
     // position: absolute;
@@ -310,7 +311,7 @@ nav {
     max-width: 1440px;
     margin: auto;
 
-    &-sec{
+    &-sec {
         width: 100%;
     }
 }
@@ -375,7 +376,7 @@ nav {
         display: block;
     }
 
-   
+
 }
 
 @media screen and (max-width: 375px) {
@@ -415,7 +416,7 @@ nav {
         height: calc(100% - 8.2em);
     }
 
-    header{
+    header {
         margin-bottom: 10em;
     }
 }
@@ -511,7 +512,7 @@ nav {
 
 /* BUTTONS */
 
-.p-rel{
+.p-rel {
     position: relative;
     bottom: 1em;
 }
@@ -567,16 +568,16 @@ nav {
 
 
 /* CARD */
-.card-hover:hover{
+.card-hover:hover {
     cursor: pointer;
 }
 
-.card-hover:hover .promotional-subtitle{
+.card-hover:hover .promotional-subtitle {
     color: $basis_red;
     cursor: pointer;
 }
 
-.card-hover:hover .read-more{
+.card-hover:hover .read-more {
     color: $effect_red;
 }
 
@@ -719,13 +720,18 @@ nav {
 
 // SECTION FEATURED ONLINE STORE
 
-.c-hover:hover  .card-title{
+section.featured .border-left {
+    position: relative;
+    top: 2em;
+}
+
+.c-hover:hover .card-title {
     color: $basis_red;
 }
 
-.c-hover:hover .card-img-top{
+.c-hover:hover .card-img-top {
     position: relative;
-    bottom:  1em;
+    bottom: 1em;
 }
 
 .line {
@@ -759,7 +765,7 @@ nav {
 // FOOTER
 
 
-footer{
+footer {
     position: relative;
     top: 3em;
 }
@@ -812,7 +818,7 @@ div.social {
     font-size: 2rem;
 }
 
-.social-link  i{
+.social-link i {
     color: $white;
 }
 
@@ -902,12 +908,14 @@ section.end-footer {
     padding: 2rem 1rem 114px;
     position: static;
 }
+
 div.end-container {
     max-width: 90rem;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
+
 div.grid-end {
     width: 100%;
     font-size: 11.5px;
@@ -915,21 +923,25 @@ div.grid-end {
     grid-template-rows: repeat(3, 1fr);
     row-gap: .5rem;
     justify-items: center;
-    .last-row{
+
+    .last-row {
         display: block;
     }
 }
+
 .mod {
     display: flex;
     flex-direction: column;
     width: 100%;
     justify-content: space-around;
 }
+
 div.flexbox-contact {
     display: flex;
     justify-content: center;
     gap: .5rem;
     font-weight: bold;
+
     a {
         margin: 0em 0em 1em;
         text-decoration: none;
@@ -937,16 +949,19 @@ div.flexbox-contact {
         font-weight: 400;
         font-size: 10px;
     }
+
     a:hover {
         color: $white;
         border-bottom: solid 2px $white;
         transition: 200ms;
     }
 }
+
 svg {
     width: 44px;
     height: 36px;
 }
+
 span.change-region {
     display: inline-flex;
     align-items: center;
@@ -958,14 +973,17 @@ span.change-region-text {
     padding-left: 2px;
     font-weight: bold;
 }
+
 div.language-select {
-    a{
+    a {
         color: $white;
         text-decoration: none;
     }
-    a:hover{
+
+    a:hover {
         color: $white;
     }
+
     .change-region-text:hover {
         color: $white;
         border-bottom: solid 2px $white;
@@ -1025,35 +1043,42 @@ div.language-select {
         justify-content: flex-end;
         margin-bottom: 10px;
     }
-    section.end-footer{
-    padding: 2rem 1rem;
-    div.grid-end {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        grid-template-rows: 1fr;
-        align-items: center;
-        margin: auto;
-        div.flexbox-contact {
-            padding-left: 2rem;
-        }
-        .mod {
-            display: flex;
-            flex-direction: row;
-            align-items: center;
-        }
-        .paragraph {
-            width: 100%;
-            text-align: left;
-}
-        .last-row {
-            display: inline;
-        }
-        span.change-region {
-            padding: 0;
-        }
-    }
 
-}
+    section.end-footer {
+        padding: 2rem 1rem;
+
+        div.grid-end {
+            display: grid;
+            grid-template-columns: 40% 60%;
+            grid-template-rows: 1fr;
+            align-items: center;
+            margin: auto;
+
+            div.flexbox-contact {
+                padding-left: 2rem;
+            }
+
+            .mod {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+            }
+
+            .paragraph {
+                width: 100%;
+                text-align: left;
+            }
+
+            .last-row {
+                display: inline;
+            }
+
+            span.change-region {
+                padding: 0;
+            }
+        }
+
+    }
 
 }
 
@@ -1110,9 +1135,10 @@ div.language-select {
     font-size: 1.75rem;
     line-height: 1.35;
 }
+
 .container-sec {
     margin: 0 auto;
-    width: 95%;    
+    width: 95%;
 }
 
 
@@ -1135,7 +1161,7 @@ div.language-select {
 .Charactersstyles {
     width: 48%;
     height: 100%;
-   
+
 }
 
 .link {
@@ -1192,11 +1218,11 @@ div.language-select {
 //card 
 .BestSellerDigitali {
     display: flex;
-   align-items: center;
-    margin: 0;  
+    align-items: center;
+    margin: 0;
 }
 
-.block{
+.block {
     display: inline-block;
 }
 
@@ -1218,14 +1244,16 @@ h1 {
 
 
 
-.title_seller {
+section.best-seller-new-releases .title_seller {
     font-size: 1.5rem;
     color: $text_color;
 }
+
 .card {
     width: 17rem;
     height: 100%;
 }
+
 .card:hover {
 
     .card-img-top {
@@ -1253,9 +1281,11 @@ h1 {
     height: 15rem;
 }
 
-.card-title {
+section.best-seller-new-releases .card-title {
     font-size: 1.2rem;
 }
+
+
 .heart {
     display: flex;
     -webkit-box-align: center;
@@ -1269,12 +1299,13 @@ h1 {
     line-height: 1;
     color: $effect_red;
     transition: color 200ms ease-in-out 0s;
+
     :hover {
 
         .sparks {
             color: $effect_red;
             display: contents;
-    
+
             transition-duration: 10s;
             transition-timing-function: ease-out;
         }
@@ -1297,7 +1328,7 @@ h1 {
         stroke-width: 4;
         stroke-opacity: 1;
     }
-    
+
 }
 
 
@@ -1321,7 +1352,7 @@ h1 {
 }
 
 .sparks {
-color: $effect_red;
+    color: $effect_red;
     display: none;
 }
 
@@ -1334,6 +1365,7 @@ color: $effect_red;
 .border-left {
     padding-left: 0.2rem;
 }
+
 // bottoe full list fine card 
 
 
@@ -1402,54 +1434,56 @@ a {
         width: 100%;
         margin-top: 1rem;
         margin-bottom: 3rem;
-        
+
 
     }
-   .card1 {
-        
-        width:49%;
+
+    .card1 {
+
+        width: 49%;
     }
+
     .Charactersstyles {
         display: flex;
         flex-direction: column;
         width: 47.8%;
     }
 
- 
+
 }
 
 
 
-@media (min-width: 429px){
+@media (min-width: 429px) {
     .CharactersTitle {
         font-size: 1.75rem;
         line-height: 1.35;
     }
-    .Nintendo{
-    font-size: 0.675rem;
-}
 
-.nameImage {
+    .Nintendo {
+        font-size: 0.675rem;
+    }
 
-    font-size: 1.3125rem
-}
+    .nameImage {
 
-.Characters {
-    font-size: 1.35rem
+        font-size: 1.3125rem
+    }
 
-}
-.title_Best_seller {
-    font-size: 1.75rem;
-}
+    .Characters {
+        font-size: 1.35rem
+    }
+
+    .title_Best_seller {
+        font-size: 1.75rem;
+    }
 
 }
 
 
 @media (min-width: 1050px) {
-.container-sec {
-   max-width: 71.5rem;
-}
+    .container-sec {
+        max-width: 71.5rem;
+    }
 
 
 }
-

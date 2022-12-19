@@ -582,6 +582,11 @@ nav {
     width: 23%;
   }
 }
+section.featured .border-left {
+  position: relative;
+  top: 2em;
+}
+
 .c-hover:hover .card-title {
   color: #E60012;
 }
@@ -1020,7 +1025,7 @@ h1 {
   padding-right: 1rem;
 }
 
-.title_seller {
+section.best-seller-new-releases .title_seller {
   font-size: 1.5rem;
   color: rgb(72, 72, 72);
 }
@@ -1052,7 +1057,7 @@ h1 {
   height: 15rem;
 }
 
-.card-title {
+section.best-seller-new-releases .card-title {
   font-size: 1.2rem;
 }
 
